@@ -14,6 +14,7 @@
 		844A7A6E19B75C840069944D /* SwiftInfiniteCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A7A6D19B75C840069944D /* SwiftInfiniteCollectionTests.swift */; };
 		8450201319B8AF4E0019C76A /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450201219B8AF4E0019C76A /* GalleryCell.swift */; };
 		84713AD619BB36EF00C549F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84713AD519BB36EF00C549F8 /* Assets.xcassets */; };
+		8494C88E19C07A18006A4243 /* PieceCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494C88D19C07A18006A4243 /* PieceCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		844A7A6D19B75C840069944D /* SwiftInfiniteCollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInfiniteCollectionTests.swift; sourceTree = "<group>"; };
 		8450201219B8AF4E0019C76A /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		84713AD519BB36EF00C549F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8494C88D19C07A18006A4243 /* PieceCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				844A7A6119B75C840069944D /* Images.xcassets */,
 				844A7A5819B75C840069944D /* Supporting Files */,
 				8450201219B8AF4E0019C76A /* GalleryCell.swift */,
+				8494C88D19C07A18006A4243 /* PieceCollection.swift */,
 			);
 			path = SwiftInfiniteCollection;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				8450201319B8AF4E0019C76A /* GalleryCell.swift in Sources */,
 				844A7A5D19B75C840069944D /* ViewController.swift in Sources */,
+				8494C88E19C07A18006A4243 /* PieceCollection.swift in Sources */,
 				844A7A5B19B75C840069944D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

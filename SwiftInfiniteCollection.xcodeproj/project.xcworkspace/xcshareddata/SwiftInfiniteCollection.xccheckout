@@ -6,10 +6,14 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9FC26572-D763-4BCB-BBD8-A69649CA7FA1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwiftInfiniteCollection</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>04615948D74B2058B366B1D2FA5C257702173910</key>
 		<string>github.com:michaelbabiy/SwiftCollectionView.git</string>
+		<key>61EDBB452ABE2365E956FB862EEDBFE6BCEAD411</key>
+		<string>github.com:wyehuongyan/swift-infinite-collection.git</string>
 		<key>6217F3D717F83AB396CF64D6CEA6FA7ED72E4279</key>
 		<string>github.com:BTLibrary/BTGlassScrollView.git</string>
 		<key>E08FB72B19D078402F4B9AEB99AA6839523C006D</key>
@@ -17,23 +21,27 @@
 		<key>E98DA774729C831451338A510DFBE5078069CB88</key>
 		<string>github.com:xudeheng/SwiftPageScrollDemo.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SwiftInfiniteCollection.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>04615948D74B2058B366B1D2FA5C257702173910</key>
-		<string>SwiftCollectionView/</string>
+		<string>../../../SwiftCollectionView</string>
+		<key>61EDBB452ABE2365E956FB862EEDBFE6BCEAD411</key>
+		<string>../..</string>
 		<key>6217F3D717F83AB396CF64D6CEA6FA7ED72E4279</key>
-		<string>BTGlassScrollView</string>
+		<string>../../../BTGlassScrollView</string>
 		<key>E08FB72B19D078402F4B9AEB99AA6839523C006D</key>
-		<string>UICollectionViewGallery/</string>
+		<string>../../../UICollectionViewGallery</string>
 		<key>E98DA774729C831451338A510DFBE5078069CB88</key>
-		<string>SwiftPageScrollDemo/</string>
+		<string>../../../SwiftPageScrollDemo</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:BTLibrary/BTGlassScrollView.git</string>
+	<string>github.com:wyehuongyan/swift-infinite-collection.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6217F3D717F83AB396CF64D6CEA6FA7ED72E4279</string>
+	<string>61EDBB452ABE2365E956FB862EEDBFE6BCEAD411</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -51,6 +59,14 @@
 			<string>04615948D74B2058B366B1D2FA5C257702173910</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SwiftCollectionView</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>61EDBB452ABE2365E956FB862EEDBFE6BCEAD411</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftInfiniteCollection</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
