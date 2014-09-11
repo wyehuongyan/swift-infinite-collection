@@ -9,7 +9,7 @@
 import UIKit
 
 class PieceCollection: UICollectionView, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-    var dataArray: Array<String> = Array<String>()
+    var dataArray = [String]()
     var pieceFrame: CGRect!
     var pieceInsets: UIEdgeInsets!
     var bgColor: UIColor!
@@ -28,15 +28,14 @@ class PieceCollection: UICollectionView, UICollectionViewDelegateFlowLayout, UIC
         self.loadImages()
     }
     
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
     func loadImages() {
-        var mainBundle: NSBundle = NSBundle.mainBundle()
-        var myImages = mainBundle.pathsForResourcesOfType("jpg", inDirectory: nil) as Array<String>
-        
-        self.dataArray = myImages
+        for(var i = 0; i < 10; i++) {
+            self.dataArray.insert("\(i+1).jpg", atIndex: i)
+        }
     }
     
     func setupCollectionView() -> UICollectionViewFlowLayout {
@@ -55,10 +54,12 @@ class PieceCollection: UICollectionView, UICollectionViewDelegateFlowLayout, UIC
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return self.dataArray.count
+        return 1
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        println(self.dataArray.count)
+        
         return self.dataArray.count
     }
     
