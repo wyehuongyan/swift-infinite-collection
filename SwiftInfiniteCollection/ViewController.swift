@@ -8,26 +8,44 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    //@IBOutlet var collectionView: UICollectionView!
-    var collectionView1: PieceCollection!
-    var collectionView2: PieceCollection!
+class ViewController: UIViewController, UIScrollViewDelegate {
+    var mainScrollView: UIScrollView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.collectionView1 = PieceCollection(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height/2), edgeInsets: UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0), bgColor: UIColor.purpleColor())
+        self.initSubviews();
+        self.view.addSubview(mainScrollView!);
         
-        self.collectionView2 = PieceCollection(frame: CGRect(x: 0, y: self.view.frame.height/2, width: self.view.frame.width, height: self.view.frame.height/2), edgeInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), bgColor: UIColor.orangeColor())
-        
-        self.view.addSubview(collectionView1)
-        self.view.addSubview(collectionView2)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func initSubviews() {
+        var fm: CGRect = UIScreen.mainScreen().bounds
+        
+        self.mainScrollView = UIScrollView(frame:CGRectMake(0, 0, fm.size.width, fm.size.height))
+        self.mainScrollView!.contentSize = CGSizeMake(self.mainScrollView!.frame.size.width, self.mainScrollView!.frame.size.height * 2)
+        self.mainScrollView!.backgroundColor = UIColor.orangeColor()
+        self.mainScrollView!.pagingEnabled = true
+        self.mainScrollView!.bounces = false
+        self.mainScrollView!.showsVerticalScrollIndicator = false;
+        self.mainScrollView!.delegate = self
+        
+        // initialize coordinate views
+        var coordinateView1 = CoordinateView(initialY: 0)
+        var coordinateView2 = CoordinateView(initialY: self.mainScrollView!.frame.size.height)
+        
+        self.mainScrollView!.addSubview(coordinateView1)
+        self.mainScrollView!.addSubview(coordinateView2)
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView!) {
+        //println("scrolling...")
     }
 }
 

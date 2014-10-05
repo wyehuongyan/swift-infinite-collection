@@ -58,8 +58,6 @@ class PieceCollection: UICollectionView, UICollectionViewDelegateFlowLayout, UIC
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        println(self.dataArray.count)
-        
         return self.dataArray.count
     }
     
